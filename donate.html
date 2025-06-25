@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Donate – MAITRI Society</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background: #f5f5f5;">
+
+  <!-- Header Top Bar -->
+  <div style="background-color: #8B5400; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap;">
+    <div style="padding-left: 80px;">
+      <img src="images/Maitri Logo.jpg" alt="MAITRI Logo" style="height: 80px;">
+    </div>
+    <div style="color: white; font-size: 16px; padding-right: 20px;">
+      📧 <a href="mailto:mstheni92@gmail.com" style="color: white; text-decoration: none;">mstheni92@gmail.com</a>
+      &nbsp;&nbsp;
+      📞 <a href="tel:+919442251105" style="color: white; text-decoration: none;">+91 9442251105</a>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav style="background-color: #d2c2b2; padding: 12px 0; text-align: center;">
+    <a href="index.html#home" style="margin: 0 25px; text-decoration: none; color: #333; font-weight: bold;">Home</a>
+    <a href="index.html#about" style="margin: 0 25px; text-decoration: none; color: #333; font-weight: bold;">About</a>
+    <a href="index.html#programs" style="margin: 0 25px; text-decoration: none; color: #333; font-weight: bold;">Programs</a>
+    <a href="index.html#gallery" style="margin: 0 25px; text-decoration: none; color: #333; font-weight: bold;">Gallery</a>
+    <a href="index.html#contact" style="margin: 0 25px; text-decoration: none; color: #333; font-weight: bold;">Contact</a>
+  </nav>
+
+  <!-- Donation Form Section -->
+  <section style="max-width: 700px; margin: 60px auto; background: white; padding: 40px; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.1);">
+    <h1 style="text-align: center; color: #5a2d82;">Make a Donation</h1>
+    <div style="text-align: center; color: #555; margin-top: -10px; font-size: 18px;">நன்கொடை அளியுங்கள்</div>
+
+    <form action="#" method="post" style="margin-top: 30px;">
+      <!-- Full Name -->
+      <div style="margin-bottom: 20px;">
+        <label for="name" style="display: block; font-weight: bold; color: #333; margin-bottom: 5px;">Full Name*</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+
+      <!-- Address -->
+      <div style="margin-bottom: 20px;">
+        <label for="address" style="display: block; font-weight: bold; color: #333; margin-bottom: 5px;">Full Address with Pincode*</label>
+        <textarea id="address" name="address" required placeholder="Enter full address with pincode" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
+      </div>
+
+      <!-- Phone -->
+      <div style="margin-bottom: 20px;">
+        <label for="phone" style="display: block; font-weight: bold; color: #333; margin-bottom: 5px;">Phone Number*</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+
+      <!-- Email (Optional) -->
+      <div style="margin-bottom: 20px;">
+        <label for="email" style="display: block; font-weight: bold; color: #333; margin-bottom: 5px;">Email Address (optional)</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email (optional)" style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px;">
+      </div>
+
+      <!-- Donation Type Checkboxes -->
+      <div style="margin-bottom: 25px;">
+        <label style="display: block; font-weight: bold; color: #333; margin-bottom: 10px;">Type of Donation (Select one or more):</label>
+        <label style="display: block; margin-bottom: 8px;"><input type="checkbox" name="donation[]" value="meal"> Meal Sponsorship</label>
+        <label style="display: block; margin-bottom: 8px;"><input type="checkbox" name="donation[]" value="grocery"> Grocery Kit Support</label>
+        <label style="display: block;"><input type="checkbox" name="donation[]" value="cash"> Cash Contribution</label>
+      </div>
+
+      <!-- Submit Button -->
+      <div style="text-align: right;">
+        <button type="submit" style="background-color: #5a2d82; color: white; border: none; padding: 12px 25px; border-radius: 5px; font-size: 16px; cursor: pointer;">Donate Now</button>
+      </div>
+    </form>
+
+    <p style="text-align: center; font-size: 14px; margin-top: 25px; color: #777;">Thank you for your generosity! We will get in touch with a receipt and updates.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background-color: #8B4513; color: white; text-align: center; padding: 15px 20px; font-size: 15px;">
+    © 2025 MAITRI Society | Registered under Societies Registration Act, 27 of 1975. No.161/1992
+  </footer>
+
+</body>
+</html>

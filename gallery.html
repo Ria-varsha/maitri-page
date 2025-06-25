@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Gallery – MAITRI Society</title>
+</head>
+<body style="margin: 0; font-family: Arial, sans-serif; background: #f5f5f5; display: flex; flex-direction: column; min-height: 100vh;">
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); z-index: 1000; justify-content: center; align-items: center;">
+    <span onclick="closeLightbox()" style="position: absolute; top: 20px; right: 30px; font-size: 40px; color: white; cursor: pointer;">&times;</span>
+    <img id="lightbox-img" src="" style="max-width: 95%; max-height: 90vh; border-radius: 10px;" alt="Full Image" />
+  </div>
+
+  <!-- Header -->
+  <div style="background-color: #8B5400; padding: 10px 0; display: flex; justify-content: space-between; align-items: center;">
+    <div style="padding-left: 80px;">
+      <img src="images/Maitri Logo.jpg" alt="MAITRI Logo" style="height: 80px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.2);">
+    </div>
+    <div style="color: white; font-size: 16px; padding-right: 40px; text-align: right;">
+      📧 <a href="mailto:mstheni92@gmail.com" style="color: white; text-decoration: none;">mstheni92@gmail.com</a>
+      &nbsp;&nbsp;
+      📞 <a href="tel:+919442251105" style="color: white; text-decoration: none;">+91 9442251105</a>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav style="background-color: #d2c2b2; padding: 14px 0; display: flex; justify-content: center;">
+    <a href="index.html#home" style="margin: 0 25px; text-decoration: none; color: #333; font-weight: bold;">Home</a>
+    <a href="index.html#about" style="margin: 0 25px; text-decoration: none; color: #333; font-weight: bold;">About</a>
+    <a href="index.html#programs" style="margin: 0 25px; text-decoration: none; color: #333; font-weight: bold;">Programs</a>
+    <a href="index.html#gallery" style="margin: 0 25px; text-decoration: none; color: #333; font-weight: bold;">Gallery</a>
+    <a href="index.html#contact" style="margin: 0 25px; text-decoration: none; color: #333; font-weight: bold;">Contact</a>
+  </nav>
+
+  <!-- Main Gallery Section -->
+  <main style="flex: 1; padding: 50px 20px; max-width: 1200px; margin: 0 auto;">
+    <h2 style="text-align: center; font-size: 32px; margin-bottom: 40px; color: #5a2d82;">Full Gallery</h2>
+    <div id="gallery" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+      <!-- 20 Gallery Images -->
+      <!-- Images 1 to 20 -->
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 1.jpg" alt="SHG Women Group" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 2.JPG" alt="Old Age Home Women" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 3.JPG" alt="Women Empowerment" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 4.JPG" alt="SHG Meeting" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 5.JPG" alt="Support Program" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 6.JPG" alt="Village Workshop" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 7.JPG" alt="SHG Women Group" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 8.JPG" alt="Old Age Home Women" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 9.JPG" alt="Women Empowerment" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 10.JPG" alt="SHG Meeting" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 11.JPG" alt="Support Program" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 12.jpg" alt="Village Workshop" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 13.JPG" alt="SHG Meeting" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 14.JPG" alt="Support Program" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 15.JPG" alt="Village Workshop" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 16.JPG" alt="SHG Women Group" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 17.JPG" alt="Old Age Home Women" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 18.JPG" alt="Women Empowerment" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 19.JPG" alt="SHG Meeting" style="width: 100%; height: auto; display: block;"></div>
+      <div style="overflow: hidden; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);"><img src="images/img 20.JPG" alt="Support Program" style="width: 100%; height: auto; display: block;"></div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer style="background-color: #8B4513; color: white; text-align: center; padding: 15px 20px; font-size: 15px;">
+    © 2025 MAITRI Society | Registered under Societies Registration Act, 27 of 1975. No.161/1992
+  </footer>
+
+  <!-- Lightbox Script -->
+  <script>
+    const galleryImages = Array.from(document.querySelectorAll('#gallery img'));
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    let currentIndex = 0;
+
+    galleryImages.forEach((img, index) => {
+      img.style.cursor = 'pointer';
+      img.addEventListener('click', () => {
+        currentIndex = index;
+        showImage(currentIndex);
+      });
+    });
+
+    function showImage(index) {
+      lightboxImg.src = galleryImages[index].src;
+      lightbox.style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      lightbox.style.display = 'none';
+    }
+
+    document.addEventListener('keydown', e => {
+      if (lightbox.style.display === 'flex') {
+        if (e.key === 'ArrowRight') navigate(1);
+        if (e.key === 'ArrowLeft') navigate(-1);
+        if (e.key === 'Escape') closeLightbox();
+      }
+    });
+
+    let touchStartX = 0;
+    lightbox.addEventListener('touchstart', e => {
+      touchStartX = e.touches[0].clientX;
+    });
+
+    lightbox.addEventListener('touchend', e => {
+      const touchEndX = e.changedTouches[0].clientX;
+      if (touchStartX - touchEndX > 50) navigate(1);
+      else if (touchEndX - touchStartX > 50) navigate(-1);
+    });
+
+    function navigate(direction) {
+      currentIndex = (currentIndex + direction + galleryImages.length) % galleryImages.length;
+      showImage(currentIndex);
+    }
+  </script>
+
+</body>
+</html>

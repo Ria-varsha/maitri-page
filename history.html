@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History – MAITRI Society</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: #fffaf2;
+    }
+
+    header {
+      background: #8e600b;
+      border-bottom: 1px solid #e9ecef;
+      padding: 20px 0;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 0 1rem;
+    }
+
+    .logo img {
+      height: 60px;
+      border-radius: 6px;
+    }
+
+    .contact-bar {
+      display: flex;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #fefefe;
+    }
+
+    .contact-item a {
+      color: #fefefe;
+      text-decoration: none;
+    }
+
+    nav.nav {
+      position: sticky;
+      top: 0;
+      background: #5d2b0454;
+      backdrop-filter: blur(10px);
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 1rem 0;
+    }
+
+    .nav-content {
+      display: flex;
+      justify-content: center;
+    }
+
+    .nav-list {
+      display: flex;
+      list-style: none;
+      gap: 3rem;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      position: relative;
+    }
+
+    .nav-link:hover {
+      color: #8B4513;
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background: #DAA520;
+      transition: width 0.3s ease;
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+      border: 1px solid #e0c78c;
+      background: #fffef9;
+      border-radius: 10px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
+
+    .section-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .section:nth-child(even) .section-container {
+      flex-direction: row-reverse;
+    }
+
+    .section-text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .section-text h2 {
+      color: #8e600b;
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+
+    .section-text p {
+      color: #444;
+      line-height: 1.8;
+    }
+
+    .section-img {
+      flex: 1;
+      text-align: center;
+    }
+
+    .section-img img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 20px rgba(16, 24, 177, 0.1), 0 0 50px rgba(255, 204, 0, 0.2);
+    }
+
+    .highlight-box {
+      background: #e9fff1;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 174, 255, 0.2);
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .highlight-box h3 {
+      font-size: 1.4rem;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      background: #8e600b;
+      padding: 20px;
+      color: white;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .section-container {
+        flex-direction: column !important;
+      }
+      .nav-list {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+      }
+      .header-content {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+   <div class="logo">
+  <img src="images/Maitri Logo.jpg" alt="MAITRI Logo" style="width: 160px; height: 70px; margin-left: 90px;">
+
+</div>
+
+     <div class="contact-bar" style="display: flex; gap: 30px; margin-right: 60px;">
+  <div class="contact-item">
+    📧 <a href="mailto:mstheni92@gmail.com" style="text-decoration: none; color: #e2e1e1;">mstheni92@gmail.com</a>
+  </div>
+  <div class="contact-item">
+    📞 <a href="tel:+919442251105" style="text-decoration: none; color: #ede8e8;">+91 9442251105</a>
+  </div>
+</div>
+
+  </header>
+
+  <nav class="nav">
+    <div class="nav-content">
+      <ul class="nav-list">
+        <li><a href="index.html#home" class="nav-link">Home</a></li>
+        <li><a href="index.html#about" class="nav-link">About</a></li>
+        <li><a href="index.html#programs" class="nav-link">Programs</a></li>
+        <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+        <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div style="margin-top: 60px;"></div>
+
+
+<!-- 3. Health Services (Image Left with Two Images) -->
+<section class="section" style="padding: 60px 0; background-color: #fefaf6; margin-bottom: 80px;">
+  <div class="section-container" style="display: flex; flex-direction: row; align-items: flex-start; gap: 40px; max-width: 1200px; margin: auto;">
+
+    <!-- Image Column with Two Stacked Images - Updated with Health-Related Photos -->
+<div class="section-img" style="display: flex; flex-direction: column; gap: 90px; margin: 30px 20px 40px 50px; padding: 10px;">
+  <img src="images/health 1.JPG"
+       alt="Doctor Consultation"
+       style="width: 450px; height: 220px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);" />
+
+  <img src="images/health 2.JPG"
+       alt="Medical Lab"
+       style="width: 450px; height: 220px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);" />
+</div>
+
+
+    <!-- Text Content Column -->
+    <div class="section-text" style="flex: 1; margin-left: -20px; padding-right: 40px;">
+      <h2 style="margin-bottom: 20px; font-size: 28px; color: #4b2e2e;">Health Services</h2>
+
+      <div style="margin-bottom: 30px;">
+        <h3 style="color: #8B4513; margin-bottom: 8px;">Medical Care</h3>
+        <p style="line-height: 1.7;">
+          MAITRI ran rural clinics attached to well-equipped laboratories. Each year, between 15,000 and 20,000 patients received treatment for various diseases. These services helped reduce healthcare disparities in underserved regions.
+
+        </p>
+      </div>
+
+      <div style="margin-bottom: 30px;">
+        <h3 style="color: #8B4513; margin-bottom: 8px;">Community Health Programs</h3>
+        <p style="line-height: 1.7;">
+          Initiatives included maternity care (ANC & PNC), personal hygiene awareness, school health outreach, general medical camps, and sanitation drives to foster a healthier living environment.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 30px;">
+        <h3 style="color: #8B4513; margin-bottom: 8px;">Tuberculosis (TB) Program</h3>
+        <p style="line-height: 1.7;">
+          Through the RNTCP and collaboration with the District Tuberculosis Department, we offered DOTS-based treatment and awareness to control the spread of TB.
+        </p>
+      </div>
+
+      <div>
+        <h3 style="color: #8B4513; margin-bottom: 8px;">HIV/AIDS Support Services</h3>
+        <p style="line-height: 1.7;">
+          Our services focused on counseling, medical aid, nutritional support, and reducing social stigma. Trained livelihood activists provide field support and care to affected individuals and families.
+        </p>
+      </div>
+    </div>
+  </div>
+</section> <!-- ✅ Properly closed Health section -->
+
+
+
+<!-- 4. Panchayat Raj Leadership (Image Right, Text Left) -->
+<section class="section" style="padding: 60px 0; background-color: #fefaf6; margin-bottom: 80px;">
+  <div class="section-container" style="display: flex; flex-direction: row; align-items: flex-start; gap: 40px; max-width: 1200px; margin: auto;">
+
+    <!-- Text Content Column -->
+    <div class="section-text" style="flex: 1; margin-right: -20px; padding-left: 60px;">
+      <h2 style="margin-bottom: 20px; font-size: 28px; color: #4b2e2e;">Panchayat Raj</h2>
+
+      <div style="margin-bottom: 24px;">
+        <h3 style="color: #8B4513; margin-bottom: 8px;">Encouraging Participation</h3>
+        <p style="line-height: 1.7;">
+          Motivated women to participate actively in Panchayat activities and local governance processes.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3 style="color: #8B4513; margin-bottom: 8px;">Leadership Skill Development</h3>
+        <p style="line-height: 1.7;">
+          Trained women with leadership potential to build confidence and public engagement abilities.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3 style="color: #8B4513; margin-bottom: 8px;">Support Group Formation</h3>
+        <p style="line-height: 1.7;">
+          Created support groups for women leaders to share knowledge and build networks.
+        </p>
+      </div>
+
+      <div>
+        <h3 style="color: #8B4513; margin-bottom: 8px;">Training Elected Representatives</h3>
+        <p style="line-height: 1.7;">
+          Guided elected women leaders to serve communities effectively and confidently.
+        </p>
+      </div>
+    </div>
+
+    <!-- Image Column (Moved Slightly More to the Right) -->
+    <div class="section-img" style="display: flex; flex-direction: column; gap: 90px; margin: 30px 50px 40px 30px; padding: 10px;">
+      <img src="images/panchayatraj 1.JPG"
+           alt="Panchayat Meeting"
+           style="width: 450px; height: 220px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);" />
+
+      <img src="images/panchayatraj 2.JPG"
+           alt="Women Leadership in Village"
+           style="width: 450px; height: 220px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);" />
+    </div>
+
+  </div>
+</section>
+
+
+<!-- 5. Education (Image Left, Text Right) -->
+<section class="section" style="padding: 60px 0; background-color: #fefaf6; margin-bottom: 80px;">
+  <div class="section-container" style="display: flex; flex-direction: row; align-items: flex-start; gap: 40px; max-width: 1200px; margin: auto;">
+
+    <!-- Image Column -->
+    <div class="section-img" style="display: flex; flex-direction: column; gap: 90px; margin: 30px 20px 40px 50px; padding: 10px;">
+      <img src="images/anbagam home 2.JPG"
+           alt="Children at Outdoor Games"
+           style="width: 450px; height: 220px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);" />
+      <img src="images/anbagam home 1.JPG"
+           alt="Foster Home at Anbagam"
+           style="width: 450px; height: 220px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);" />
+    </div>
+
+    <!-- Text Content Column -->
+    <div class="section-text" style="flex: 1; margin-left: -20px; padding-right: 40px;">
+      <h1 style="margin-bottom: 20px; font-size: 30px; color: #4b2e2e;">Education</h1>
+
+      <div style="margin-bottom: 30px;">
+        <h2 style="color: #8B4513; margin-bottom: 8px;">Child Development</h2>
+        <p style="line-height: 1.7;">
+          MAITRI supports the advancement of educational activities through active community participation. The goal is to reduce school dropouts, eliminate child labor, and improve literacy levels across underserved areas.
+        </p>
+      </div>
+
+      <!-- Anbagam Description -->
+      <div style="margin-bottom: 40px;">
+        <h3 style="color: #4b2e2e; margin-bottom: 12px; font-size: 22px;">
+          ANBAGAM CHILDREN'S VILLAGE
+        </h3>
+        <p style="line-height: 1.7;">
+          Anbagam Children's Village provided individual foster homes where children live under the care of trained foster mothers. With nurturing attention and structured routines, children thrive through education, outdoor games, and family-style living.
+        </p>
+      </div>
+
+      <!-- ✅ Blue Highlight Box with Better Spacing -->
+      <div style="
+        margin-top: 20px;
+        padding: 20px 24px;
+        background: linear-gradient(135deg, #e8f4ff, #f6fbff);
+        border-left: 6px solid #2196F3;
+        border-radius: 10px;
+        box-shadow: 0 4px 20px rgba(33, 150, 243, 0.2);
+        font-weight: 500;
+        color: #1e3d59;
+        font-size: 16px;
+        line-height: 1.8;
+      ">
+        Each home at Anbagam was guided by a dedicated foster mother, creating a nurturing and stable family-like environment.  
+        <br><br>
+        This approach helps children grow with emotional security, structured daily care, and strong social values.
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- 5. Integrated Children and Old Age Home (Text Left, Image Right) -->
+<section class="section" style="padding: 60px 0; background-color: #fefaf6; margin-bottom: 80px;">
+  <div class="section-container" style="display: flex; flex-direction: row; align-items: flex-start; gap: 40px; max-width: 1200px; margin: auto;">
+
+    <!-- Text Content Column (Now on the Left) -->
+    <div class="section-text" style="flex: 1; padding-left: 40px;">
+      <h2 style="margin-bottom: 20px; font-size: 28px; color: #4b2e2e;">Integrated Children and Old Age Home</h2>
+
+      <div style="margin-bottom: 24px;">
+        <h3 style="color: #8B4513; margin-bottom: 8px;">A Unified Shelter of Care</h3>
+        <p style="line-height: 1.7;">
+          In 2012, the Tamil Nadu government introduced a compassionate initiative under the leadership of Hon’ble Chief Minister Selvi J. Jayalalitha, integrating care for children and elderly citizens in one shared living space.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3 style="color: #8B4513; margin-bottom: 8px;">Building Emotional Bonds</h3>
+        <p style="line-height: 1.7;">
+          These homes promotes intergenerational relationships, where children receive wisdom and love from elders, while seniors regain purpose and connection through nurturing young lives.
+        </p>
+      </div>
+
+      <div style="margin-bottom: 24px;">
+        <h3 style="color: #8B4513; margin-bottom: 8px;">Facilities and Support</h3>
+        <p style="line-height: 1.7;">
+          Residents benefit from nutritious meals, medical attention, educational support, and emotional care — creating a holistic ecosystem of security and dignity.
+        </p>
+      </div>
+
+      <div>
+        <h3 style="color: #8B4513; margin-bottom: 8px;">MAITRI’s Role in Theni</h3>
+        <p style="line-height: 1.7;">
+          MAITRI operated one of these integrated homes in Theni district, fostering a family-like environment that uplifts vulnerable children and elders through shared compassion.
+        </p>
+      </div>
+    </div>
+
+    <!-- Image Column (Now on the Right) -->
+    <div class="section-img" style="display: flex; flex-direction: column; gap: 90px; margin: 30px 50px 40px 20px; padding: 10px;">
+      <img src="images/integrated home 1.JPG"
+           alt="Grandmother with child"
+           style="width: 450px; height: 230px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);" />
+
+      <img src="images/integrated home 2.JPG"
+           alt="Children with elder"
+           style="width: 450px; height: 230px; object-fit: cover; border-radius: 16px; box-shadow: 0 8px 24px rgba(0,0,0,0.1);" />
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+  <footer>
+    &copy; 2025 MAITRI Society | Registered under Societies Registration Act,27 of 1975.No.161/1992.
+  </footer>
+</body>
+</html>
